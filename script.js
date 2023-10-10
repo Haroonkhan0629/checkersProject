@@ -1,14 +1,26 @@
-let allWords = ["word", "spear", "fish"]
+allWords = ["words", "spear"]
 
-let gameWord = document.getElementById("game-word")
+randomWord = allWords[Math.floor(Math.random() * allWords.length)]
 
-let randomWord = allWords[Math.floor(Math.random() * allWords.length)]
+splitWord = randomWord.split("")
 
-splitWord = randomWord.split(" ")
+function startGame() {
+    gameLetters = []
+    arr = []
+    for (i = 0; i < splitWord.length; i++) {
+        gameLetters.push(splitWord[i])
+        splitWord[i] = "_"
+        arr.push(splitWord[i])
+        document.getElementById("game-word").textContent = arr
 
-splitWord.forEach(function() {
-    
-})
+        // document.getElementById("game-word").addEventListener("click", function() {
+        //     guessedLetter = prompt("Guess a letter")
+        // })
+        // if(guessedLetter.includes(gameLetters[i])) {
+        //     // make guessed letter appear in correct place
+        // }
+    }
+}
 
 
 
