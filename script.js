@@ -51,14 +51,14 @@ for (let i = 0; i < buttons.length; i++) {
         if (lives === 0) {
             hangman.src = "https://images.vexels.com/media/users/3/134499/isolated/lists/15919ef0465bf8c31fbc307d9b20f1a9-emoji-morto-emoticon.png"
             title.textContent = "YOU LOSE"
-            // MAKE BUTTONS STOP WORKING SO USER CAN'T KEEP PLAYING
+            // MAKE BUTTONS STOP WORKING && ADD RESTART LINK  
         }
 
         if (blanks.length === gameLetters.length && blanks.every(function(element, index) {
             return element === gameLetters[index]
-        })) {  // ASK FOR CLARIFICATION OF WHAT THIS MEANS
+        })) {  
             title.textContent = "YOU WIN"
-            // MAKE BUTTONS STOP WORKING SO USER CAN'T KEEP PLAYING
+            // MAKE BUTTONS STOP WORKING && ADD RESTART LINK  
         }
 
     })

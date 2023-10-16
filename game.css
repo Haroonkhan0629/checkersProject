@@ -1,13 +1,35 @@
+@font-face {
+    font-family: square;
+    src: url();
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://i.pinimg.com/originals/27/df/d6/27dfd6b55602f6da042af85a7a4b2225.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #hangman {
     height: 100px;
     width: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 #title {
     text-align: center;
 }
 
-body {
-    background-image: url("https://i1.wp.com/www.graphicsfuel.com/wp-content/uploads/2010/10/chalkboard-01.png?resize=618%2C618");
-    
+#game-word {
+    text-align: center;
+    transform: scale(2.5) 
 }
+
+#letters {
+    text-align: center;
+    margin-top: 70px;
+}
+
