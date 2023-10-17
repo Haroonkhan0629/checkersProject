@@ -1,4 +1,4 @@
-const allWords = ["words", "spear", "hippopotimus"]
+const allWords = ["word", "spear", "hippopotimus"]
 
 const randomWord = allWords[Math.floor(Math.random() * allWords.length)]
 
@@ -7,16 +7,22 @@ let splitWord = randomWord.split("")
 const title = document.getElementById("title")
 const hangman = document.getElementById("hangman")
 const buttons = document.getElementsByTagName("button")
-const gameWord = document.getElementById("game-word")  // REMOVE COMMAS
+const gameWord = document.getElementById("game-word")  
 const gameLetters = []
 const blanks = []
 let lives = 5
+
+function disableButtons() {
+    for (i = 0; i < buttons.length; i++) {
+        buttons[i].setAttribute("disabled", "")
+    }
+}
 
 for (let i = 0; i < splitWord.length; i++) {
     gameLetters.push(splitWord[i])
     splitWord[i] = "_"
     blanks.push(splitWord[i])
-    gameWord.textContent = blanks
+    gameWord.textContent = blanks.join(" ")
 }
 
 for (let i = 0; i < buttons.length; i++) {
@@ -27,7 +33,7 @@ for (let i = 0; i < buttons.length; i++) {
             for (let i = 0; i < gameLetters.length; i++) {
                 if (gameLetters[i] === guessedLetter) {
                     blanks[i] = guessedLetter
-                    gameWord.textContent = blanks
+                    gameWord.textContent = blanks.join(" ")
                 }
             }
         } else if (gameLetters.includes(guessedLetter) === false) {
@@ -51,14 +57,17 @@ for (let i = 0; i < buttons.length; i++) {
         if (lives === 0) {
             hangman.src = "https://images.vexels.com/media/users/3/134499/isolated/lists/15919ef0465bf8c31fbc307d9b20f1a9-emoji-morto-emoticon.png"
             title.textContent = "YOU LOSE"
-            // MAKE BUTTONS STOP WORKING && ADD RESTART LINK  
+            gameWord.innerHTML = (" <a href=game.html <h1> Play Again </h1> </a>")
+            disableButtons()
         }
 
         if (blanks.length === gameLetters.length && blanks.every(function(element, index) {
             return element === gameLetters[index]
         })) {  
+            hangman.src = "http://cdn.shopify.com/s/files/1/1061/1924/products/4_grande.png?v=1544200553"
             title.textContent = "YOU WIN"
-            // MAKE BUTTONS STOP WORKING && ADD RESTART LINK  
+            gameWord.innerHTML = (" <a href=game.html <h1> Play Again </h1> </a>")
+            disableButtons()
         }
 
     })

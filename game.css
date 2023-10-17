@@ -21,15 +21,20 @@ body {
 
 #title {
     text-align: center;
+    color: whitesmoke;
+    margin-top: 150px;
 }
 
 #game-word {
     text-align: center;
-    transform: scale(2.5) 
+    transform: scale(2.5);
+    color: whitesmoke;
 }
 
 #letters {
     text-align: center;
     margin-top: 70px;
+    color: whitesmoke;
+    transform: scale(1.8);
 }
 

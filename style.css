@@ -8,5 +8,27 @@ body {
 
 h1 {
     text-align: center;
-    margin: 50px 50px
+    margin: 50px 50px;
+    color: whitesmoke;
+    margin-top: 150px;
+}
+
+#info {
+    display: block;
+    margin: 0 auto;
+    color: whitesmoke;
+    max-width: 350px;
+    transform: scale(2);
+    margin-top: 100px;
+    border-style: ridge;
+    background-color: black;
+    opacity: .8;
+    padding-left: 10px;
+}
+
+#img {
+    height: 100px;
+    width: 100px; 
+    display: block;
+    margin: 0 auto;
 }
