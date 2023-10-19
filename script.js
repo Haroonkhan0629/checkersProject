@@ -1,9 +1,10 @@
-const allWords = ["word", "spear", "hippopotimus"]
+const allWords = ["WORD"]
 
 const randomWord = allWords[Math.floor(Math.random() * allWords.length)]
 
 let splitWord = randomWord.split("")
 
+const hint = document.getElementById("hint")
 const title = document.getElementById("title")
 const hangman = document.getElementById("hangman")
 const buttons = document.getElementsByTagName("button")
@@ -52,12 +53,15 @@ for (let i = 0; i < buttons.length; i++) {
         
         if (lives === 1) {
             hangman.src = "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/48960/loudly-crying-face-emoji-clipart-md.png"
+            if (gameLetters === ["W", "O", "R", "D"]) {
+                hint.textContent = "HINT: WE USE THIS TO MAKE A SENTANCE" // HINTS
+            }
         }
         
         if (lives === 0) {
             hangman.src = "https://images.vexels.com/media/users/3/134499/isolated/lists/15919ef0465bf8c31fbc307d9b20f1a9-emoji-morto-emoticon.png"
             title.textContent = "YOU LOSE"
-            gameWord.innerHTML = (" <a href=game.html <h1> Play Again </h1> </a>")
+            gameWord.innerHTML = (" <a href=game.html <h1> PLAY AGAIN </h1> </a>")
             disableButtons()
         }
 
@@ -66,7 +70,7 @@ for (let i = 0; i < buttons.length; i++) {
         })) {  
             hangman.src = "http://cdn.shopify.com/s/files/1/1061/1924/products/4_grande.png?v=1544200553"
             title.textContent = "YOU WIN"
-            gameWord.innerHTML = (" <a href=game.html <h1> Play Again </h1> </a>")
+            gameWord.innerHTML = (" <a href=game.html <h1> PLAY AGAIN </h1> </a>")
             disableButtons()
         }
 
