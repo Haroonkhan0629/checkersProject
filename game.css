@@ -46,3 +46,15 @@ button {
     color: whitesmoke;
     font-family: "square chalk";
 }
+
+#restart {
+    text-align: center;
+    color: whitesmoke;
+}
+
+#hint {
+    text-align: center;
+    color: whitesmoke;
+    transform: scale(2);
+    margin-top: 100px;
+}
