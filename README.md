@@ -37,7 +37,7 @@
 * [Trello Page](https://trello.com/b/zXDHVxUz/spaceman-hangman)
 
 ## <a name="design"></a>Design
-* Design elements implemented using HTML5 and CSS3. 
+* Design elements implemented using HTML and CSS. 
 
 ## <a name="deployment"></a>Deployed Link
 * [Game Link](https://haroonkhan0629.github.io/hangmanProject/)
