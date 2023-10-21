@@ -10,6 +10,7 @@
 * [Technologies Used](#technologiesused)
 * [Features](#features)
 * [Design](#design)
+* [Project Next Steps](#nextsteps)
 * [Deployed App](#deployment)
 * [About the Author](#author)
 
@@ -38,6 +39,10 @@
 
 ## <a name="design"></a>Design
 * Design elements implemented using HTML and CSS. 
+
+## <a name="nextsteps"></a>Project Next Steps
+* User will hear a sound when they guess (correct: ding, incorrect: buzz)
+* User will guess two worded phrases
 
 ## <a name="deployment"></a>Deployed Link
 * [Game Link](https://haroonkhan0629.github.io/hangmanProject/)
