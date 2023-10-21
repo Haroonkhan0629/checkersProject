@@ -15,8 +15,8 @@
 
 ## <a name="technologiesused"></a>Technologies Used
 * JavaScript
-* HTML5
-* CSS3
+* HTML
+* CSS
 
 
 ## Features
@@ -40,11 +40,9 @@
 * Design elements implemented using HTML5 and CSS3. 
 
 ## <a name="deployment"></a>Deployed Link
-* You can play the game here:
-[Game Link](https://haroonkhan0629.github.io/hangmanProject/)
+* [Game Link](https://haroonkhan0629.github.io/hangmanProject/)
 
-* You can view the repository:
-[Github Repo](https://github.com/Haroonkhan0629/hangmanProject)
+* [Github Repo](https://github.com/Haroonkhan0629/hangmanProject)
     
 ## Works Cited:
 * N/A

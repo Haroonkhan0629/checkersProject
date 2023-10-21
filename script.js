@@ -74,7 +74,7 @@ for (let i = 0; i < buttons.length; i++) {
             title.textContent = "YOU LOSE"
             hint.textContent = " "
             restart.innerHTML = ("<a href=game.html <h1> TRY AGAIN </h1> </a>")
-            gameWord.textContent = (`THE WORD WAS ${randomWord}`)
+            gameWord.textContent = (`SORRY! THE WORD WAS ${randomWord}`)
             disableButtons()
         }
         if (blanks.length === gameLetters.length && blanks.every(function (element, index) {
@@ -84,7 +84,7 @@ for (let i = 0; i < buttons.length; i++) {
             title.textContent = "YOU WIN"
             hint.textContent = " "
             restart.innerHTML = ("<a href=game.html <h1> PLAY AGAIN </h1> </a>")
-            gameWord.textContent = (`THE WORD WAS ${randomWord}`)
+            gameWord.textContent = (`NICE! THE WORD WAS ${randomWord}`)
             disableButtons()
         }
     })
