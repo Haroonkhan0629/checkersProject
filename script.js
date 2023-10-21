@@ -73,7 +73,7 @@ for (let i = 0; i < buttons.length; i++) {
             hangman.src = "https://images.vexels.com/media/users/3/134499/isolated/lists/15919ef0465bf8c31fbc307d9b20f1a9-emoji-morto-emoticon.png"
             title.textContent = "YOU LOSE"
             hint.textContent = " "
-            restart.innerHTML = (" <a href=game.html <h1> TRY AGAIN </h1> </a>")
+            restart.innerHTML = ("<a href=game.html <h1> TRY AGAIN </h1> </a>")
             gameWord.textContent = (`THE WORD WAS ${randomWord}`)
             disableButtons()
         }
@@ -83,7 +83,7 @@ for (let i = 0; i < buttons.length; i++) {
             hangman.src = "http://cdn.shopify.com/s/files/1/1061/1924/products/4_grande.png?v=1544200553"
             title.textContent = "YOU WIN"
             hint.textContent = " "
-            restart.innerHTML = (" <a href=game.html <h1> PLAY AGAIN </h1> </a>")
+            restart.innerHTML = ("<a href=game.html <h1> PLAY AGAIN </h1> </a>")
             gameWord.textContent = (`THE WORD WAS ${randomWord}`)
             disableButtons()
         }
