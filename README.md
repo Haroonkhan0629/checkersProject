@@ -10,7 +10,6 @@
 * [Technologies Used](#technologiesused)
 * [Features](#features)
 * [Design](#design)
-* [Project Next Steps](#nextsteps)
 * [Deployed App](#deployment)
 * [About the Author](#author)
 
@@ -40,43 +39,17 @@
 ## <a name="design"></a>Design
 * Design elements implemented using HTML5 and CSS3. 
 
-
-## <a name="nextsteps"></a>Project Next Steps
-* Visitors will be able to shop for content related items
-* Users can change the theme.
-
 ## <a name="deployment"></a>Deployed Link
+* You can play the game here:
 [Game Link](https://haroonkhan0629.github.io/hangmanProject/)
 
 * You can view the repository:
 [Github Repo](https://github.com/Haroonkhan0629/hangmanProject)
-* If unable to view please go live locally through VS Code
     
 ## Works Cited:
 * N/A
 
-
 ## <a name="author"></a>About The Author
 I am a Software Engineer who loves collaborating with other creative minds to assemble complex and fun bits of code!
-
-
-
-
-
-
-
-
-
-
-
-Message seirfx-821-resources
-
-
-
-
-
-
-
-
 
 
