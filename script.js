@@ -1,4 +1,4 @@
-const allWords = ["WORD", "SPEAR", "HIPPOPOTIMUS", "MILK", "CRAYON"]
+const allWords = ["WORD", "SPEAR", "HIPPOPOTIMUS", "MILK", "CRAYON", "APPLE", "DESK", "SLEEP"]
 
 const randomWord = allWords[Math.floor(Math.random() * allWords.length)]
 
@@ -67,6 +67,15 @@ for (let i = 0; i < buttons.length; i++) {
             }
             if (randomWord === "CRAYON") {
                 hint.textContent = "HINT: CHILDREN USE THIS TO EXPRESS CREATIVITY"
+            }
+            if (randomWord === "APPLE") {
+                hint.textContent = "HINT: ONE OF THESE A DAY KEEPS THE DOCTOR AWAY"
+            }
+            if (randomWord === "DESK") {
+                hint.textContent = "HINT: STUDENTS SIT IN THESE THROUGH SCHOOL DAYS"
+            }
+            if (randomWord === "SLEEP") {
+                hint.textContent = "HINT: THE MOST RELAXING PART OF SOMEONE'S NIGHT"
             }
         }
         if (lives === 0) {
