@@ -41,9 +41,8 @@
 * Design elements implemented using HTML and CSS. 
 
 ## <a name="nextsteps"></a>Project Next Steps
-* User will hear a sound when they guess (correct: ding, incorrect: buzz)
-* Increase size of word bank
 * Include Media Queries allowing users to access application on smaller devices
+* Increase size of word bank
 
 ## <a name="deployment"></a>Project Links
 * [Game Link](https://haroonkhan0629.github.io/hangmanProject/)
