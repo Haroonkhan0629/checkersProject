@@ -41,8 +41,8 @@
 * Design elements implemented using HTML and CSS. 
 
 ## <a name="nextsteps"></a>Project Next Steps
-* Include Media Queries allowing users to access application on smaller devices
-* Increase size of word bank
+* Media Queries: Allow users to access application on smaller devices
+* Word Bank: Increase number of words to guess from
 
 ## <a name="deployment"></a>Project Links
 * [Game Link](https://haroonkhan0629.github.io/hangmanProject/)

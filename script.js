@@ -54,7 +54,7 @@ for (let i = 0; i < buttons.length; i++) {
         if (lives === 1) {
             hangman.src = "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/48960/loudly-crying-face-emoji-clipart-md.png"
             if (randomWord === "WORD") {
-                hint.textContent = "HINT: WE USE THIS TO MAKE A SENTANCE"
+                hint.textContent = "HINT: WE USE THESE TO MAKE SENTANCES"
             }
             if (randomWord === "SPEAR") {
                 hint.textContent = "HINT: A VERY PRIMITIVE WEAPON"
@@ -75,14 +75,14 @@ for (let i = 0; i < buttons.length; i++) {
                 hint.textContent = "HINT: STUDENTS SIT IN THESE THROUGH SCHOOL DAYS"
             }
             if (randomWord === "SLEEP") {
-                hint.textContent = "HINT: THE MOST RELAXING PART OF SOMEONE'S NIGHT"
+                hint.textContent = "HINT: AT NIGHT, IN OUR BED, ZZZ"
             }
         }
         if (lives === 0) {
             hangman.src = "https://images.vexels.com/media/users/3/134499/isolated/lists/15919ef0465bf8c31fbc307d9b20f1a9-emoji-morto-emoticon.png"
             title.textContent = "YOU LOSE"
             hint.textContent = " "
-            restart.innerHTML = ("<a href=game.html <h1> TRY AGAIN </h1> </a>")
+            restart.innerHTML = ("<a href=game.html <h1 id='restart'> TRY AGAIN </h1> </a>")
             gameWord.textContent = (`SORRY! THE WORD WAS ${randomWord}`)
             disableButtons()
         }
@@ -92,7 +92,7 @@ for (let i = 0; i < buttons.length; i++) {
             hangman.src = "http://cdn.shopify.com/s/files/1/1061/1924/products/4_grande.png?v=1544200553"
             title.textContent = "YOU WIN"
             hint.textContent = " "
-            restart.innerHTML = ("<a href=game.html <h1> PLAY AGAIN </h1> </a>")
+            restart.innerHTML = ("<a href=game.html <h1 id='restart'> PLAY AGAIN </h1> </a>")
             gameWord.textContent = (`NICE! THE WORD WAS ${randomWord}`)
             disableButtons()
         }

@@ -5,11 +5,13 @@
 
 body {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
     background-image: url("https://i.pinimg.com/originals/27/df/d6/27dfd6b55602f6da042af85a7a4b2225.png");
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: "square chalk"
+    font-family: "square chalk";
+    margin: 0 auto;
 }
 
 #hangman {
@@ -50,6 +52,11 @@ button {
 #restart {
     text-align: center;
     color: whitesmoke;
+    text-decoration: none;
+}
+
+#restart:hover {
+    text-decoration: underline;
 }
 
 #hint {
